@@ -9,8 +9,8 @@ import java.sql.SQLException;
 public class JDBCTemplate {
 
 	private static final String JDBC_URL = "jdbc:oracle:thin:@127.0.0.1:1521/xepdb1";
-	private static final String USER = "javauser";
-	private static final String PASSWD = "java1234";
+	private static final String USER = "culture";
+	private static final String PASSWD = "cul1234";
 	
 	public static Connection getConnection() {
 		Connection conn = null;
