@@ -1,5 +1,12 @@
 package com.mvc.manager.dao;
 
-public interface ManagerMapper {
+import java.util.List;
+import org.apache.ibatis.session.SqlSession;
 
+import com.mvc.manager.vo.ManagerVO;
+
+public interface ManagerMapper {
+	
+	public int loginBoardManager(ManagerVO vo);	
+	public ManagerVO getLoginListManager(ManagerVO vo);
 }

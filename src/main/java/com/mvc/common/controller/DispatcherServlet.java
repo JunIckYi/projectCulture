@@ -72,7 +72,7 @@ public class DispatcherServlet extends HttpServlet {
 		// 4. ViewResolver를 통해 viewName에 해당하는 화면을 검색한다.
 		String view = null;
 
-		if (!viewName.contains(".do")) {
+		if (!viewName.contains(".go")) {
 			view = viewResolver.getView(viewName); // viewResolver.getView("/board/getBoardList") =>
 													// /WEB-INF/board/getBoardList.jsp
 			// 5. 검색된 화면으로 이동한다.(포워드)

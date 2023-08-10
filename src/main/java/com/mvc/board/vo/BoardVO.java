@@ -15,14 +15,14 @@ public class BoardVO {
 	
 	private String search = "";		//기본값을 null 이 아니라 ""(빈문자)로 제어, 검색대상
 	private String keyword = "";	//검색어
+	private int userNo;
 	
 	
 	
 	public BoardVO() {}
 	
-	
 	public BoardVO(int num, String author, String title, String content, String writeday, int repRoot, int repStep,
-			int repIndent, String search, String keyword) {
+			int repIndent, String search, String keyword, int userNo) {
 		super();
 		this.num = num;
 		this.author = author;
@@ -34,7 +34,9 @@ public class BoardVO {
 		this.repIndent = repIndent;
 		this.search = search;
 		this.keyword = keyword;
+		this.userNo = userNo;
 	}
+	
 	public int getNum() {
 		return num;
 	}
@@ -95,10 +97,13 @@ public class BoardVO {
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
+	public int getUserNo() {
+		return userNo;
+	}
+	public void setUserNo(int userNo) {
+		this.userNo = userNo;
+	}
 	
-	
-	
-	
-	
+
 
 }
