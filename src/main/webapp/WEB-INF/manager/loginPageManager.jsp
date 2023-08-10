@@ -16,6 +16,8 @@
 				$("#mlogform").submit();
 			
 			});
+			
+			
 		});
 
 	</script>
